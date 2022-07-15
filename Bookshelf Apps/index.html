@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style/style.css">
+    <title>PerpsutakaanKu</title>
+</head>
+<body>
+    <header id="header">
+        <h1>PerpsutakaanKu</h1>
+    </header>
+    <main>
+        <span class="backgroundHeader"></span>
+        <div class="mainContent">
+            <a href="#perpustakaan">
+                <div id="tombolDaftarBuku" class="daftarBuku">
+                    <button class="tombolDaftarBuku"></button>  
+                    <label for="daftarBuku">Daftar Buku</label>
+                </div>  
+            </a>
+            
+
+            <div class="content input" >
+                <div class="rakContainer">
+                    <h2>Buku Baru</h2>
+                    <form id="form" class="form" action="#">
+                        <div class="formData">
+                            <label for="inputJudul">Judul : </label><br>
+                            <input type="text" id="inputJudul" class="inputData" name="judul" placeholder="Masukkan judul..." required>
+                        </div>
+    
+                        <div class="formData">
+                            <label for="inputPenulis">Penulis : </label><br>
+                            <input type="text" id="inputPenulis" class="inputData" name="penulis" placeholder="Masukkan nama penulis..." required>
+                        </div>
+    
+                        <div class="formData">
+                            <label for="inputTerbit">Tahun Terbit : </label><br>
+                            <input type="number" id="inputTerbit" class="inputData" name="terbit" placeholder="Masukkan tahun terbit..." required>
+                        </div>
+
+                        <div class="formDiBaca">
+                            <h4>Selesai dibaca</h4> <input type="checkbox" name="selesaiDiBaca" id="tombolSelesaiDiBaca" class="selesaiDiBaca">
+                        </div>
+                        
+                        <div class="submitData">
+                            <input type="submit" id="submitData" class="tombolSubmit" value="Tambah">   
+                        </div>
+                    </form>
+                </div>
+            </div>
+    
+            <div class="content cari">
+                <form id="formCari" class="formCari" action="#">
+                    <div class="pencarian">
+                        <label for="pencarian">Cari :</label><br>
+                        <input type="search" id="cariBuku" class="inputData" placeholder="Judul...">
+                    </div>
+                    <input type="submit" id="tombolCariBuku" class="tombolCari" value="Cari">
+                </form>
+            </div>
+        </div>
+        
+        <div class="perpustakaanContent">
+            <div id="tutupPerpustakaan" class="tutupPerpustakaan">
+                <button class="tombolTutup"></button>
+            </div> 
+                
+            <div id="perpustakaan" class="perpustakaan">
+                <div class="statusBuku">
+                    <h2>Belum Dibaca</h2>
+    
+                </div>
+                <div class="rak">
+                    <div id="unread"></div>
+                </div>
+    
+                <div class="statusBuku">
+                    <h2>Selesai Dibaca</h2>
+                </div>
+                <div class="rak">  
+                    <div id="read"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: cursive ,sans-serif;
+    font-size: larger;
+    background: url('../image/background.jpg');
+    background-size :50% 100%;
+    background-repeat: repeat-x;
+}
+
+header {
+    top: 0%;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 100px;
+}
+
+h1 {
+    padding: 20px;
+    color: yellow;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 2.5em;
+    letter-spacing: 10px;
+}
+
+.backgroundHeader {
+    display: block;
+    padding: 75px;
+    width: 100%;
+}
+
+.mainContent {
+    display: flex;
+}
+
+.content {
+    text-align: center;
+    max-width: 50%;
+    margin: 50px 50px 50px auto;
+    border: 1px solid;
+    border-radius: 10px;
+    background: white;
+}
+
+.input {
+    flex-basis: 75%;
+    margin-right: 0;
+}
+
+.cari {
+    flex-basis: 25%;
+    max-width: 290px;
+    max-height: 130px;
+    margin: 50px 25px;
+}
+
+h2 {
+    top: 0;
+    margin: 0;
+    padding: 10px 5px 10px 5px;
+    border-radius: 10px;
+}
+
+.rakContainer {
+    margin: 0px auto 10px auto;
+}
+
+.formData {
+    text-align: left;
+    margin: 10px 20px;
+}
+
+.formDiBaca {
+    display: flex;
+    margin: 0 20px;
+    padding: 0 10px 0 0;
+}
+
+.formDiBaca h4 {
+    margin: 0;
+    font-size: 12px;
+}
+
+.formCari {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin: 10px 20px;
+}
+
+.formCari .pencarian {
+    flex-grow: 2;
+}
+
+.tombolCari {
+    padding: 2px 10px;
+    margin: 10px auto;
+    margin-top: 18px;
+    border-radius: 10px;
+    font-family: cursive, sans-serif;
+}
+
+.tombolCari:hover {
+    font-weight: bold;
+    background-color: #6c37ff;
+    color: wheat;
+    cursor: pointer;
+}
+
+label {
+    font-weight: bold;
+}
+
+.inputData {
+    width: 100%;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #F5F1FF;
+    
+}
+
+.tombolSubmit {
+    padding: 5px 10px;
+    border-radius: 15px;
+    margin: 10px 35px 0 35px;
+    cursor: pointer;
+    font-family: cursive, sans-serif;
+}
+
+.tombolSubmit:hover {
+    background-color: #6c37ff;
+    color: wheat;
+    font-weight: bold;
+}
+
+.perpustakaan {
+    margin: 0;
+    visibility: hidden;
+}
+
+.perpustakaan .statusBuku h2 {
+    color: black;
+    padding-left: 50px;
+    background: aqua;
+    border-radius: 0;
+    border: 1px solid  black;
+}
+
+.itemBuku {
+    display: flex;
+    border: solid;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px 20px;
+    align-items: center;
+    background: white;
+}
+
+.itemBuku button {
+    margin: 5px 20px;
+}
+
+.buku {
+    text-align: left;
+    margin: 5px;
+    flex-grow: 2;
+}
+
+.buku h3, .buku p {
+    margin: 0;
+    padding: 0;
+}
+
+span {
+    font-style: italic;
+}
+
+.tombolSelesai {
+    width: 40px;
+    height: 40px;
+
+    background: url('../icon/check-ouline.svg');
+    background-size: contain;
+    cursor: pointer;
+    border: none;
+    margin-left: auto;
+}
+
+.tombolSelesai:hover {
+    background: url('../icon/check-fill.svg');
+    background-size: contain;
+}
+
+.tombolUlangi {
+    width: 40px;
+    height: 40px;
+
+    background: url('../icon/undo.svg');
+    background-size: contain;
+    cursor: pointer;
+    border: none;
+    margin-left: auto;
+}
+
+.tombolHapus {
+    width: 40px;
+    height: 40px;
+
+    background: url('../icon/delete-ouline.svg');
+    background-size: contain;
+    cursor: pointer;
+    border: none;
+    margin-left: auto;
+}
+
+.tombolHapus:hover {
+    background: url('../icon/delete-fill.svg');
+    background-size: contain;
+}
+
+a {
+    text-decoration: none;
+    border: black;
+    color: black;
+    margin: 50px 25px auto 20px;
+}
+
+.daftarBuku {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 25%;
+    align-items: center;
+    background: white;
+    border: 1px solid;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.daftarBuku label {
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.tombolDaftarBuku {
+    width: 45px;
+    height: 45px;
+    background: url('../icon/menu-before.svg');
+    cursor: pointer;
+    border: none;
+    margin: 0 10px 5px 5px;
+}
+
+.tombolDaftarBuku:hover {
+    background: url('../icon/menu-after.svg');
+    background-size: contain;
+}
+
+.tutupPerpustakaan {
+    width: 40px;
+    height: 40px;
+    margin: 0 80px 20px auto;
+    background: white;
+    border-radius: 100%;
+    cursor: pointer;
+    visibility: hidden;
+}
+
+.tombolTutup {
+    width: 40px;
+    height: 40px;
+    margin: auto 80px 20px auto;
+    background: url('../icon/close.svg');
+    background-size: contain;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 650px) {
+    body {
+        font-size: 1em;
+    }
+
+    header {
+        display: block;
+        margin: 0;
+    }
+
+    h1 {
+        margin: 0;
+        text-align: center;
+        font-size: 1.5em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    label {
+        font-size: 0.8em;
+        font-weight: bold;
+    }
+
+    .tombolDaftarBuku {
+        width: 40px;
+        height: 40px;
+        
+    }
+
+    .tombolDaftarBuku:hover {
+        width: 40px;
+        height: 40px;
+        background-size: contain;
+    }
+}
